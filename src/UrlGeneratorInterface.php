@@ -20,7 +20,7 @@ interface UrlGeneratorInterface
      *
      * @return string URL generated.
      *
-     * @psalm-param array<string,null|object|scalar> $parameters
+     * @psalm-param array<string,mixed> $parameters
      */
     public function generate(string $name, array $parameters = []): string;
 
@@ -36,7 +36,7 @@ interface UrlGeneratorInterface
      *
      * @return string URL generated.
      *
-     * @psalm-param array<string,null|object|scalar> $parameters
+     * @psalm-param array<string,mixed> $parameters
      */
     public function generateAbsolute(
         string $name,
